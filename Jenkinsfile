@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        S3_BUCKET = 'jks-bucket-0109'
+        S3_BUCKET = 'phani-bucket-jack'
         AWS_REGION = 'us-east-1'
     }
 
@@ -11,7 +11,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/nikhilmudda/demo-nik.git'
+                    url: 'https://github.com/kvsphani548-coder/demo.git'
             }
         }
 
